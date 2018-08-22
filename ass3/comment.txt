@@ -1,0 +1,7 @@
+Hours works: ~20 hours 
+Comments: I have commented out the calls to dijkstras 
+in my ass3 because it crashes the program. 
+If you uncomment out the calls to dijkstra and uncomment 
+the line ass3.cpp.60 then you will see that when this 
+function is trying to execute it gets caught in an infinite loop
+that I am not sure how to fix. 

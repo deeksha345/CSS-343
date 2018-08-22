@@ -1,0 +1,44 @@
+deeksha@uw1-320-12:~$ g++ -std=c++14 -g -Wall -Wextra vertex.cpp edge.cpp graph.cpp ass3.cpp -o ass3
+deeksha@uw1-320-12:~$ ./ass3
+OK: 3 vertices
+OK: 3 edges
+OK: DFS
+OK: BFS
+OK: 10 vertices
+OK: 9 edges
+OK: DFS
+    Got   A B C D E F G
+ expected A B H C G D E F
+ERR: BFS
+OK: 21 vertices
+OK: 24 edges
+    Got   A B E F J C G K L D H M I
+ expected A B E F J C G K L D H M I N
+ERR: DFS from A
+    Got   O P R Q
+ expected O P R S T U Q
+ERR: DFS from O
+    Got   A B E
+ expected A B C D E F G H I J K L M N
+ERR: BFS from A
+    Got   D H M
+ expected D H I M N
+ERR: BFS from D
+OK: DFS from U
+OK: BFS from U
+a.connect(b.getLabel(), 10): true
+a.connect(c.getLabel(), 27): true
+a.connect(d.getLabel(), 5): true
+Edge weight for a to B: 10
+Number of A's neighbors: 3
+A's next neighbor: B
+A's next neighbor: C
+A's next neighbor: B
+A == B: false
+A == A: true
+B < A: false
+B < C: true
+Is B a neighbot of A?: false
+Is C a neighbot of A?: true
+is A visited: true
+is A visited: false
